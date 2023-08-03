@@ -2,12 +2,13 @@ type Props = {};
 
 const Header = ({}: Props) => {
   return (
-    <header>
-      <div>홈</div>
-      <div>페이지이동</div>
-      <div>페이지이동</div>
-      <div>페이지이동</div>
-      <div>페이지이동</div>
+    <header className="fixed bg-white w-full h-12 flex justify-between items-center px-3">
+      <div>로고</div>
+      <div className="btns">
+        <button className="text-black px-3">Intro</button>
+        <button className="text-black px-3">Blog</button>
+        <button className="text-black px-3">Send</button>
+      </div>
     </header>
   );
 };

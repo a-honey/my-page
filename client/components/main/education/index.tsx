@@ -1,4 +1,4 @@
-import styles from "./Education.module.css";
+import styles from "./index.module.css";
 import { useEffect, useState } from "react";
 import { Education } from "@/types/mainType";
 

@@ -1,7 +1,7 @@
 import React from "react";
 
-const About: React.FC = () => {
+const AboutPage: React.FC = () => {
   return <div>이거시,, Nest.js?</div>;
 };
 
-export default About;
+export default AboutPage;

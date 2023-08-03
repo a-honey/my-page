@@ -1,0 +1,6 @@
+.container {
+    height: 100vh;
+    background-color: yellow;
+    scroll-snap-align: center;
+    padding-top: 3rem;
+}
