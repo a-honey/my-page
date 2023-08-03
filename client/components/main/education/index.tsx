@@ -1,3 +1,4 @@
+import styles from "./Education.module.css";
 import { useEffect, useState } from "react";
 import { Education } from "@/types/mainType";
 
@@ -19,10 +20,9 @@ const Education = () => {
   }, []);
 
   return (
-    <>
+    <div className={styles.container}>
       <div>Education</div>
-      {education}
-    </>
+    </div>
   );
 };
 

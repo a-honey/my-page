@@ -1,13 +1,10 @@
-import "@/styles/globals.css";
+import Main from "@/containers/Main";
 import React from "react";
 
-const Main: React.FC = () => {
+const MainPage: React.FC = () => {
   return (
-    <div>
-      Hello, Nest.js and TypeScript and TailandCSS and Redux.
-      <br /> Opps,, you guyes too many.
-    </div>
+    <Main/>
   );
 };
 
-export default Main;
+export default MainPage;
