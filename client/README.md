@@ -15,22 +15,36 @@
 ┠─ components
 │    ├ common
 │    │   └ Header.tsx 
+│    │
 │    └ main
-│        ├ About.tsx 
+│        ├ about 
+│        │   ├ index.tsx
+│        │   └ index.module.css
+│        │
 │        ├ Contact.tsx 
-│        ├ Education.tsx 
-│        ├ Header.tsx 
+│        ├ education 
+│        │   ├ index.tsx
+│        │   └ index.module.css
+│        │
 │        ├ Projects.tsx 
-│        └ Skills.tsx 
+│        ├ Skills.tsx 
+│        └ start
+│            ├ index.tsx
+│            └ index.module.css
+│
+┠─ containers
+│    └ Main.tsx
+│
 ┠─ pages
 │    ├ _app.tsx 
 │    ├ _document.tsx
 │    └ index.tsx
 ┠─ styles
+│    └ globals.css
 ┠─ types
 │    └ mainType.d.ts
 ┠─ public
-│    └ public
+│    └ data
 │        ├ about.json
 │        ├ education.json
 │        └ projects.json
@@ -46,5 +60,8 @@
 ├ tsconfig.json
 └ yarn.lock
 ```
+<br>
+
+---
 
 © 2023 AHoney. All rights reserved.
