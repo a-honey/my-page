@@ -25,3 +25,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.main-container {
+  height: 100vh;
+  scroll-snap-align: center;
+  padding-top: 3rem;
+}
+
+.main-name {
+  font-size: 30px;
+  font-weight: 700;
+}
