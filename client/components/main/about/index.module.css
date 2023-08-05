@@ -1,5 +1,49 @@
-.container {
-    height: 100vh;
-    scroll-snap-align: center;
-    padding-top: 3rem;
+.firstBlock {
+  width: 100%;
+  height: 35vh;
+  background-color: violet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.secondBlock {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: blue;
+  width: 80%;
+  height: 50vh;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.imgContainer {
+  width: 300px;
+  height: 400px;
+  background-color: gray;
+}
+
+.textListConainer {
+  width: 50%;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+.textItemContainer {
+  background-color: pink;
+  border-radius: 10px;
+  padding: 10px;
 }

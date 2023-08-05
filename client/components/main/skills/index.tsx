@@ -1,11 +1,12 @@
-const Skills = () => {
+import styles from "./skills.module.sass";
 
+const Skills = () => {
   return (
     <div className="main-container">
       <h1 className="main-name">skills</h1>
-      <div className="content-container">
-        <div className="skill">
-          <div>Frontend</div>
+      <div className={styles.contentContainer}>
+        <div className={styles.itemContainer}>
+          <h2>Frontend</h2>
           <ul>
             <li>
               <ul>
@@ -21,30 +22,30 @@ const Skills = () => {
             <li>Nest.js</li>
           </ul>
         </div>
-        <div className="skill">
-          <div>Backend</div>
+        <div className={styles.itemContainer}>
+          <h2>Backend</h2>
           <ul>
             <li>Python</li>
             <li>MongoDB</li>
             <li>MySQL</li>
           </ul>
         </div>
-        <div className="skill">
-          <div>Version Control</div>
+        <div className={styles.itemContainer}>
+          <h2>Version Control</h2>
           <ul>
             <li>git</li>
             <li>GitHub</li>
             <li>GitLab</li>
           </ul>
         </div>
-        <div className="skill">
-          <div>Communication</div>
+        <div className={styles.itemContainer}>
+          <h2>Communication</h2>
           <ul>
             <li>Figma</li>
           </ul>
         </div>
-        <div className="skill">
-          <div>Certificate</div>
+        <div className={styles.itemContainer}>
+          <h2>Certificate</h2>
           <ul>
             <li>자격증없음</li>
           </ul>

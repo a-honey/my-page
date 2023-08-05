@@ -30,9 +30,15 @@ body {
   height: 100vh;
   scroll-snap-align: center;
   padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-name {
   font-size: 30px;
   font-weight: 700;
+  margin-top: 10px;
+  height: 7vh;
+  line-height: 7vh;
 }
