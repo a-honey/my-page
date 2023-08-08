@@ -13,7 +13,7 @@ const About = ({about, intro}:{ about: Type.About|null; intro:Type.Intro|null })
         <h3>{intro?.message}</h3>
         <Nav />
       </div>
-      <div className={styles.secondBlock}>
+      <div className={styles.secondBlock} id="about">
         <h1 className="main-name">about me</h1>
         <div className={styles.contentContainer}>
           <div className={styles.imgContainer}>이미지</div>

@@ -3,7 +3,7 @@ import styles from "./skills.module.sass";
 
 const Skills = ({skills}: {skills: Type.Skills | null}) => {
   return (
-    <div className="main-container">
+    <div className="main-container" id="skills">
       <h1 className="main-name">skills</h1>
       <div className={styles.contentContainer}>
         <div className={styles.itemContainer}>

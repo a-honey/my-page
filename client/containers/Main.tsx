@@ -4,6 +4,7 @@ import Skills from "@/components/main/skills";
 import Footer from "@/components/common/Footer";
 import * as Type from "../types/mainType";
 import { useEffect, useState } from "react";
+import Contact from "@/components/main/contact/Contact";
 
 type Props = {};
 
@@ -45,7 +46,7 @@ const Main = ({}: Props) => {
       <About about={about} intro={intro} />
       <Skills skills={skills}/>
       <Projects projects={projects}/>
-      <Footer />
+      <Contact />
     </div>
   );
 };

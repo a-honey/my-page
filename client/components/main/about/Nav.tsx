@@ -1,13 +1,13 @@
+import Link from "next/link";
+
 type Props = {};
 
 const Nav = ({}: Props) => {
   return (
     <div>
-        <button className="text-black px-3">&lt; about /&gt;</button>
-        <button className="text-black px-3">&lt; contact /&gt;</button>
-        <button className="text-black px-3">&lt; education /&gt;</button>
-        <button className="text-black px-3">&lt; projects /&gt;</button>
-        <button className="text-black px-3">&lt; skills /&gt;</button>
+        <a href="#about" className="text-black px-3">&lt; about /&gt;</a>
+        <a href="#skills" className="text-black px-3">&lt; skills /&gt;</a>
+        <a href="#projects" className="text-black px-3">&lt; projects /&gt;</a>
     </div>
   );
 };
