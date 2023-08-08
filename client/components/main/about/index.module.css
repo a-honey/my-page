@@ -7,6 +7,17 @@
   align-items: center;
   justify-content: space-around;
 }
+.firstBlock > h1 {
+  font-size: 20px;
+}
+
+.firstBlock > h2 {
+  font-size: 25px;
+}
+
+.firstBlock > h3 {
+  font-size: 20px;
+}
 
 .secondBlock {
   width: 100%;
@@ -46,4 +57,9 @@
   background-color: pink;
   border-radius: 10px;
   padding: 10px;
+  display: flex;
+}
+
+.textItemContainer > svg {
+  font-size: 40px;
 }

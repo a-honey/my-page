@@ -9,7 +9,7 @@ type Intro = {
 type About = {
   imgUrl: string;
   name: string;
-  birthdate: Date;
+  birthdate: string;
   address: string;
   tel: number;
   email: string;
@@ -26,7 +26,7 @@ type Skill = {
   iconUrl?: string;
   name: string;
   level: SkillLevel;
-}
+};
 
 type Skills = {
   frontend: Skill[];
@@ -34,7 +34,7 @@ type Skills = {
   versionControl: Skill[];
   communication?: Skill[];
   certificate?: Skill[];
-}
+};
 
 type Project = {
   title: string;
@@ -46,6 +46,6 @@ type Project = {
   projectRepository: string;
   role: string;
   stack: string;
-}
+};
 
 type Projects = Project[];
