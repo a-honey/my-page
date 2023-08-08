@@ -1,15 +1,16 @@
 import Nav from "./Nav";
+import * as Type from "../../../types/mainType";
 import styles from "./index.module.css";
 
-const About = () => {
+const About = ({about, intro}:{ about: Type.About|null; intro:Type.Intro|null }) => {
   return (
     <div className="main-container">
       <div className={styles.firstBlock}>
-        <h1>안녕하세요. 프론트엔드 개발자 정아현입니다.</h1>
+        <h1>{intro?.greet}</h1>
         <h2>
-          일단 도전하며 배우고, 실수를 잡아가면서 열심히 공부하고 있습니다.
+          {intro?.subGreet}
         </h2>
-        <h3>Good Luck with Your Coding Journey :D</h3>
+        <h3>{intro?.message}</h3>
         <Nav />
       </div>
       <div className={styles.secondBlock}>
@@ -21,7 +22,7 @@ const About = () => {
               <div>아이콘</div>
               <div className={styles.textContainer}>
                 <div>이름</div>
-                <div>정아현</div>
+                <div>{about?.name}</div>
               </div>
             </li>
             <li className={styles.textItemContainer}>

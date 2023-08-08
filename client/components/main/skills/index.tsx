@@ -1,6 +1,7 @@
+import * as Type from "../../../types/mainType";
 import styles from "./skills.module.sass";
 
-const Skills = () => {
+const Skills = ({skills}: {skills: Type.Skills | null}) => {
   return (
     <div className="main-container">
       <h1 className="main-name">skills</h1>
