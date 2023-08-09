@@ -43,3 +43,23 @@ body {
   line-height: 7vh;
   text-transform: uppercase;
 }
+
+#intro {
+  background-color: #91f62c;
+}
+
+#about {
+  background-color: #f04da7;
+}
+
+#skills {
+  background-color: #F2A007;
+}
+
+#project {
+  background-color: #F23A29;
+}
+
+#contact {
+  background-color: #1c7317;
+}

@@ -30,13 +30,12 @@
 .contentContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 20px;
-  background-color: blue;
+  background-color: white;
   width: 80%;
   height: 50vh;
   border-radius: 25px;
-  padding: 20px;
+  padding: 100px;
 }
 
 .imgContainer {
@@ -54,12 +53,21 @@
 }
 
 .textItemContainer {
+  width: 250px;
+  height: 100px;
   background-color: pink;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 0px 10px 30px;
   display: flex;
+  align-items: center;
+  gap: 20px
 }
 
 .textItemContainer > svg {
   font-size: 40px;
+}
+
+.textContainer {
+  width: 140px;
+  font-size: 15px;
 }

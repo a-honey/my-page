@@ -17,7 +17,7 @@ const About = ({
 }) => {
   return (
     <div className="main-container">
-      <div className={styles.firstBlock}>
+      <div className={styles.firstBlock} id="intro">
         <h1>{intro?.greet}</h1>
         <h2>{intro?.subGreet}</h2>
         <h3>{intro?.message}</h3>
