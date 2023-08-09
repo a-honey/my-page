@@ -42,7 +42,7 @@ const Main = ({}: Props) => {
   }
 
   return (
-    <div className="h-screen bg-orange-500 snap-y snap-mandatory scroll-smooth overflow-y-auto">
+    <div className="h-screen snap-y snap-mandatory scroll-smooth overflow-y-auto">
       <About about={about} intro={intro} />
       <Skills skills={skills}/>
       <Projects projects={projects}/>
