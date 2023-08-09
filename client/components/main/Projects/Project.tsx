@@ -1,43 +1,32 @@
+import * as Type from "../../../types/mainType";
 import styles from "./project.module.scss";
 
-const Project = () => {
+const Project = ({project, setIndex}:{project: Type.Project, setIndex: React.Dispatch<React.SetStateAction<number>>}) => {
   return (
     <div className={styles.contentContainer}>
-      <h1>프로젝트 제목입니다</h1>
-      <h2>프로젝트 소제목입니다. 간단한 한줄 설명입니다.</h2>
+      <h1>{project.title}</h1>
+      <h2>{project.subTitle}</h2>
       <div className={styles.container}>
         <div className={styles.imgContainer}>프로젝트 이미지 슬라이드</div>
         <div className={styles.textContainer}>
           <p>
-            프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명
-            길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트
-            설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명
-            길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트
-            설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명
-            길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트
-            설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명
-            길게프로젝트 설명 길게프로젝트 설명 길게~ 프로젝트 설명 길게프로젝트
-            설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명
-            길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트
-            설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명
-            길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트
-            설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명
-            길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트
-            설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명
-            길게프로젝트 설명 길게~
+            {project.description}
           </p>
           <ul>
             <li>
-              <div>주요 기능</div>
-              <div>주요 기능을 설명</div>
+              <label>주요 기능</label>
+              <div>{project.featuresDescription}</div>
             </li>
             <li>
-              <div>깃허브</div>
-              <div>프로젝트 바로가기</div>
+              <label>역할</label>
+              <div>{project.role}</div>
             </li>
             <li>
-              <div>역할</div>
-              <div>내 역할에서 사용한 스택</div>
+              <label>스택</label>
+              <div>{project.stack}</div>
+            </li>
+            <li>
+              <a href={project.projectRepository}>프로젝트 둘러보기</a>
             </li>
           </ul>
         </div>
