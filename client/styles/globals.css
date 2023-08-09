@@ -45,21 +45,21 @@ body {
 }
 
 #intro {
-  background-color: #91f62c;
+  background-color: yellow;
 }
 
 #about {
-  background-color: #f04da7;
+  background-color:  #1c7317;;
 }
 
 #skills {
-  background-color: #F2A007;
-}
-
-#project {
   background-color: #F23A29;
 }
 
+#project {
+  background-color:#F2A007;
+}
+
 #contact {
-  background-color: #1c7317;
+  background-color: blueviolet;
 }
