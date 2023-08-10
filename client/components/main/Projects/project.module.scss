@@ -31,8 +31,7 @@
 }
 
 .textContainer {
-  width: 65%;
-  height: 100%;
+  width: 100%;
   p {
     height: 36vh;
     overflow: hidden;
@@ -57,6 +56,11 @@
   .container {
     align-items: center;
     flex-direction: column;
+    padding: 0;
+  }
+  .imgContainer {
+    width: 100%;
+    height: 300px;
   }
   .textContainer {
     background-color: white;
@@ -66,6 +70,7 @@
     ul {
       padding: 0;
       margin: 0;
+      background-color: pink;
       ::before {
         height: 0;
       }

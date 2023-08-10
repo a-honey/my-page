@@ -29,17 +29,25 @@ body {
 }
 
 #about {
-  background-color:  #1c7317;;
+  background-color: #1c7317;
 }
 
 #skills {
-  background-color: #F23A29;
+  background-color: #f23a29;
 }
 
 #projects {
-  background-color:#F2A007;
+  background-color: #f2a007;
 }
 
 #contact {
   background-color: blueviolet;
+}
+
+@media (max-width: 767px) {
+  #about,
+  #skills,
+  #projects {
+    padding-bottom: 60px;
+  }
 }
