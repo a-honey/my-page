@@ -40,7 +40,15 @@
 .imgContainer {
   width: 350px;
   height: 400px;
-  background-color: gray;
+  overflow: hidden;
+  position: relative;
+}
+
+.imgContainer img {
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
 }
 
 .textListContainer {

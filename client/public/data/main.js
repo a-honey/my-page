@@ -1,8 +1,7 @@
 export const data = {
   intro: {
     greet: "안녕하세요. 프론트엔드 개발자 정아현입니다.",
-    subGreet:
-      "일단 도전하며 배우고, 실수를 잡아가면서 열심히 공부하고 있습니다.",
+    subGreet: "상태 관리를 공부하고 있습니다.",
     message: "Good Luck with Your Coding Journey :D",
   },
   about: {

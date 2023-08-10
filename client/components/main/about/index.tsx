@@ -24,7 +24,9 @@ const About = ({
       <div className={styles.secondBlock} id="about">
         <h1 className="main-name">about me</h1>
         <div className={styles.contentContainer}>
-          <div className={styles.imgContainer}>이미지</div>
+          <div className={styles.imgContainer}>
+            <img src="/assets/me.jpg" alt="profile" />
+          </div>
           <ul className={styles.textListContainer}>
             <li className={styles.textItemContainer}>
               <CgProfile />

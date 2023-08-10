@@ -9,39 +9,23 @@ body {
 .main-container {
   height: 100vh;
   scroll-snap-align: center;
-  padding-top: 3rem;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff5bf;
 }
 
 .main-name {
   font-size: 30px;
   font-weight: 700;
-  margin-top: 10px;
   height: 7vh;
   line-height: 7vh;
   text-transform: uppercase;
 }
 
 #intro {
-  background-color: #ffce00;
-}
-
-#about {
-  background-color: #047c00;
-}
-
-#skills {
-  background-color: #f23a29;
-}
-
-#projects {
-  background-color: #0084db;
-}
-
-#contact {
-  background-color: #7e41d4;
+  background-color: #fde55b;
 }
 
 @media (max-width: 767px) {
