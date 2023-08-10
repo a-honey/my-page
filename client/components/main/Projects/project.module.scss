@@ -31,7 +31,8 @@
 }
 
 .textContainer {
-  width: 100%;
+  width: 80%;
+  max-width: 800px;
   p {
     height: 36vh;
     overflow: hidden;
@@ -57,10 +58,6 @@
     align-items: center;
     flex-direction: column;
     padding: 0;
-  }
-  .imgContainer {
-    width: 100%;
-    height: 300px;
   }
   .textContainer {
     background-color: white;

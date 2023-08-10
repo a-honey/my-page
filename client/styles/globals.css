@@ -25,11 +25,11 @@ body {
 }
 
 #intro {
-  background-color: yellow;
+  background-color: #ffce00;
 }
 
 #about {
-  background-color: #1c7317;
+  background-color: #047c00;
 }
 
 #skills {
@@ -37,11 +37,11 @@ body {
 }
 
 #projects {
-  background-color: #f2a007;
+  background-color: #0084db;
 }
 
 #contact {
-  background-color: blueviolet;
+  background-color: #7e41d4;
 }
 
 @media (max-width: 767px) {

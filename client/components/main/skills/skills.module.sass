@@ -5,12 +5,34 @@
   border-radius: 25px,
   padding: 50px,
   display: grid,
-  grid-template: 1fr 1fr / 1fr 1fr 1fr
+  grid-template: 350px 300px / 1fr 1fr 1fr
 
 .itemContainer
+  display: flex
+  flex-direction: column
+  align-items: center
   h2
     font-size: 25px
     padding-bottom: 15px
-  ul>li>ul 
+
+.front
+  grid-row-start: 1
+  grid-row-end: 3
+.back
+.communication
+.version
+.certificate
+   grid-column-start: 3
+
+@media (max-width: 820px)
+  .contentContainer
     display: flex
-    gap: 10px
+    flex-direction: column
+  .back
+    display: none
+  .communication
+    display: none
+  .version
+    display: none
+  .certificate
+    display: none
