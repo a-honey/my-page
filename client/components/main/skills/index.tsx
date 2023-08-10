@@ -12,7 +12,7 @@ const Skills = ({ skills }: { skills: Type.Skills | null }) => {
           <Image
             src="/assets/fronts.svg"
             alt="front"
-            width={240}
+            width={300}
             height={600}
           />
         </div>
