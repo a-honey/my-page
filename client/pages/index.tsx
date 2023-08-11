@@ -1,5 +1,5 @@
-import Main, { Props } from "@/containers/Main";
-import { data } from "@/public/data/main";
+import Main, { Props } from "../containers/Main";
+import { data } from "../public/data/main";
 import React from "react";
 import { GetStaticProps } from "next";
 

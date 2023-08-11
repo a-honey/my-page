@@ -1,11 +1,11 @@
-import Projects from "@/components/main/projects";
-import About from "@/components/main/about";
-import Skills from "@/components/main/skills";
-import Footer from "@/components/common/Footer";
+import Projects from "../components/main/projects";
+import About from "../components/main/about";
+import Skills from "../components/main/skills";
+import Footer from "../components/common/Footer";
 import { data } from "../public/data/main";
 import * as Type from "../types/mainType";
 import { useEffect, useState } from "react";
-import Contact from "@/components/main/contact/Contact";
+import Contact from "../components/main/contact/Contact";
 
 export type Props = {
   about: Type.About;

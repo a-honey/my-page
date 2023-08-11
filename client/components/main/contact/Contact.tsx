@@ -1,5 +1,5 @@
 import styles from "./contact.module.scss";
-import Footer from "@/components/common/Footer";
+import Footer from "../../../components/common/Footer";
 import { BsGithub, BsPencilSquare, BsInstagram } from "react-icons/bs";
 
 const Contact = () => {
