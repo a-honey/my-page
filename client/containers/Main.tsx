@@ -1,4 +1,4 @@
-import Projects from "../components/main/projects";
+import Projects from "../components/main/projects/index";
 import About from "../components/main/about";
 import Skills from "../components/main/skills";
 import Footer from "../components/common/Footer";
