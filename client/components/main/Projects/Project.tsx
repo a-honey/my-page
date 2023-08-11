@@ -1,5 +1,6 @@
 import * as Type from "../../../types/mainType";
 import styles from "./project.module.scss";
+import Image from "next/image";
 
 const Project = ({
   project,
@@ -14,7 +15,7 @@ const Project = ({
       <h2>{project.subTitle}</h2>
       <div className={styles.container}>
         <div className={styles.imgContainer}>
-          <img src="/assets/image.png" alt="project" />
+          <Image src="/assets/image.png" alt="project" />
         </div>
         <div className={styles.textContainer}>
           <p>{project.description}</p>

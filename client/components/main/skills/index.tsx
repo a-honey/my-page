@@ -42,7 +42,9 @@ const Skills = ({ skills }: { skills: Type.Skills | null }) => {
           <h2>Certificate</h2>
           <ul>
             {skills?.certificate ? (
-              skills.certificate.map((skill) => <li>{skill.name}</li>)
+              skills.certificate.map((skill) => (
+                <li key={skill.name}>{skill.name}</li>
+              ))
             ) : (
               <li>자격증 없음</li>
             )}

@@ -4,6 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { IoSchoolOutline } from "react-icons/io5";
+import Image from "next/image";
 import * as Type from "../../../types/mainType";
 import styles from "./index.module.css";
 
@@ -25,7 +26,7 @@ const About = ({
         <h1 className="main-name">about me</h1>
         <div className={styles.contentContainer}>
           <div className={styles.imgContainer}>
-            <img src="assets/me.jpg" alt="me" />
+            <Image src="assets/me.jpg" alt="me" />
           </div>
           <ul className={styles.textListContainer}>
             <li className={styles.textItemContainer}>
