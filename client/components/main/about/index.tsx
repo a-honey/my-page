@@ -26,7 +26,7 @@ const About = ({
         <h1 className="main-name">about me</h1>
         <div className={styles.contentContainer}>
           <div className={styles.imgContainer}>
-            <Image src="assets/me.jpg" alt="me" />
+            <Image src="/assets/me.jpg" alt="me" />
           </div>
           <ul className={styles.textListContainer}>
             <li className={styles.textItemContainer}>
