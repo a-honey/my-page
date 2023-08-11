@@ -25,9 +25,10 @@
 }
 
 .imgContainer {
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 470px;
   background-color: gray;
+  overflow: hidden;
 }
 
 .textContainer {
@@ -36,6 +37,7 @@
   p {
     height: 36vh;
     overflow: hidden;
+    font-family: "Noto Sans KR";
   }
   ul {
     position: relative;
@@ -50,6 +52,24 @@
       height: 2px;
       background-color: black;
     }
+    li {
+      label {
+        font-size: 17px;
+        font-weight: 700;
+      }
+      div {
+        font-family: "Noto Sans KR";
+      }
+      a {
+        font-size: 15px;
+        background-color: black;
+        color: white;
+        position: absolute;
+        padding: 5px;
+        border-radius: 2px;
+        right: 0;
+      }
+    }
   }
 }
 
@@ -59,6 +79,11 @@
     flex-direction: column;
     padding: 0;
   }
+  .imgContainer {
+    width: 380px;
+    height: 355px;
+  }
+
   .textContainer {
     background-color: white;
     p {

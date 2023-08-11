@@ -41,6 +41,13 @@
   width: 350px;
   height: 400px;
   background-color: gray;
+  overflow: hidden;
+  position: relative;
+}
+
+.imgContainer > img {
+  position: absolute;
+  bottom: -40px;
 }
 
 .textListContainer {
