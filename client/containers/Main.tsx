@@ -6,6 +6,7 @@ import * as Type from "../types/mainType";
 import { useEffect, useState } from "react";
 import Contact from "../components/contact/Contact";
 import Intro from "@/components/intro";
+import Index from "@/components/Index";
 
 export type Props = {
   about: Type.About;
@@ -15,7 +16,14 @@ export type Props = {
 };
 
 const Main = ({ importData }: { importData: Props }) => {
-  const components = ["intro", "about", "skills", "projects", "contact"]; // 컴포넌트 목록 배열
+  const components = [
+    "intro",
+    "index",
+    "about",
+    "skills",
+    "projects",
+    "contact",
+  ]; // 컴포넌트 목록 배열
   const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
 
   const moveToNextComponent = () => {
@@ -61,6 +69,9 @@ const Main = ({ importData }: { importData: Props }) => {
   switch (currentComponent) {
     case "intro":
       currentContent = <Intro />;
+      break;
+    case "index":
+      currentContent = <Index />;
       break;
     case "about":
       currentContent = (
