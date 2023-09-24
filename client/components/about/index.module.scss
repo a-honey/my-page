@@ -1,21 +1,17 @@
-.firstBlock {
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.profile {
   width: 100%;
   height: 35vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-}
-.firstBlock > h1 {
-  font-size: 20px;
-}
-
-.firstBlock > h2 {
-  font-size: 25px;
-}
-
-.firstBlock > h3 {
-  font-size: 20px;
 }
 
 .secondBlock {

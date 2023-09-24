@@ -14,6 +14,12 @@ main {
   justify-content: center;
   align-items: center;
   padding: 5vh;
+  color: #fcfdf7;
+}
+
+.bright {
+  background-color: #fcfdf7;
+  color: #a72e11;
 }
 
 .main-container {
@@ -32,26 +38,6 @@ main {
   height: 7vh;
   line-height: 7vh;
   text-transform: uppercase;
-}
-
-#intro {
-  background-color: #ffce00;
-}
-
-#about {
-  background-color: #047c00;
-}
-
-#skills {
-  background-color: #f23a29;
-}
-
-#projects {
-  background-color: #0084db;
-}
-
-#contact {
-  background-color: #7e41d4;
 }
 
 @media (max-width: 767px) {

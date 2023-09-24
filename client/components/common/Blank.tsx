@@ -1,13 +1,12 @@
-import Contact from "../common/Contact";
+import Contact from "./Contact";
 import styles from "./index.module.scss";
 
-const Intro = () => {
+const Blank = ({ content }: { content: string }) => {
   return (
     <main>
       <div className={styles.container}>
         <div className={styles.center}>
-          <h1>Ahyeon, Jung</h1>
-          <h2>The front-end developer</h2>
+          <h1>{content}</h1>
         </div>
         <div className={styles.right}>
           <div>portfolio</div>
@@ -18,4 +17,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default Blank;

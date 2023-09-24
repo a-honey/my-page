@@ -1,4 +1,3 @@
-import Projects from "../components/Projects/index";
 import About from "../components/about";
 import Skills from "../components/skills";
 import { data } from "../public/data/main";
@@ -7,6 +6,9 @@ import { useEffect, useState } from "react";
 import Contact from "../components/contact/Contact";
 import Intro from "@/components/intro";
 import Index from "@/components/Index";
+import Description from "@/components/description";
+import Blank from "@/components/common/Blank";
+import Project from "@/components/Projects/Project";
 
 export type Props = {
   about: Type.About;
@@ -20,9 +22,12 @@ const Main = ({ importData }: { importData: Props }) => {
     "intro",
     "index",
     "about",
+    "description",
     "skills",
-    "projects",
-    "contact",
+    "project",
+    "project1",
+    "project2",
+    "finish",
   ]; // 컴포넌트 목록 배열
   const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
 
@@ -53,10 +58,8 @@ const Main = ({ importData }: { importData: Props }) => {
 
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
-    window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
-      window.removeEventListener("scroll", handleScroll);
     };
   }, [currentComponentIndex]);
 
@@ -78,20 +81,29 @@ const Main = ({ importData }: { importData: Props }) => {
         <About about={importData.about} intro={importData.intro} />
       );
       break;
+    case "description":
+      currentContent = <Description />;
+      break;
     case "skills":
       currentContent = <Skills skills={importData.skills} />;
       break;
-    case "projects":
-      currentContent = <Projects projects={importData.projects} />;
+    case "project":
+      currentContent = <Blank content="project" />;
       break;
-    case "contact":
-      currentContent = <Contact />;
+    case "project1":
+      currentContent = <Project project={importData.projects[0]} />;
+      break;
+    case "project2":
+      currentContent = <Project project={importData.projects[1]} />;
+      break;
+    case "finish":
+      currentContent = <Blank content="Thank you" />;
       break;
     default:
       currentContent = null;
   }
 
-  return <main>{currentContent}</main>;
+  return <>{currentContent}</>;
 };
 
 export default Main;
