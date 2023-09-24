@@ -5,6 +5,7 @@ import { data } from "../public/data/main";
 import * as Type from "../types/mainType";
 import { useEffect, useState } from "react";
 import Contact from "../components/contact/Contact";
+import Intro from "@/components/intro";
 
 export type Props = {
   about: Type.About;
@@ -14,7 +15,7 @@ export type Props = {
 };
 
 const Main = ({ importData }: { importData: Props }) => {
-  const components = ["about", "skills", "projects", "contact"]; // 컴포넌트 목록 배열
+  const components = ["intro", "about", "skills", "projects", "contact"]; // 컴포넌트 목록 배열
   const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
 
   const moveToNextComponent = () => {
@@ -25,8 +26,8 @@ const Main = ({ importData }: { importData: Props }) => {
 
   const moveToBeforeComponent = () => {
     // 이전 컴포넌트로 이동
-    const nextIndex = (currentComponentIndex + 1) % components.length;
-    setCurrentComponentIndex(nextIndex);
+    const beforeIndex = (currentComponentIndex - 1) % components.length;
+    setCurrentComponentIndex(beforeIndex);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -58,6 +59,9 @@ const Main = ({ importData }: { importData: Props }) => {
   // currentComponent에 따라 컴포넌트 렌더링
   let currentContent;
   switch (currentComponent) {
+    case "intro":
+      currentContent = <Intro />;
+      break;
     case "about":
       currentContent = (
         <About about={importData.about} intro={importData.intro} />
@@ -76,13 +80,7 @@ const Main = ({ importData }: { importData: Props }) => {
       currentContent = null;
   }
 
-  return (
-    <div
-      className={`snap-y snap-mandatory scroll-smooth h-screen overflow-y-auto`}
-    >
-      {currentContent}
-    </div>
-  );
+  return <main>{currentContent}</main>;
 };
 
 export default Main;
