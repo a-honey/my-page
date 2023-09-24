@@ -1,4 +1,4 @@
-import * as Type from "../../../types/mainType";
+import * as Type from "../../types/mainType";
 import styles from "./project.module.scss";
 import Image from "next/image";
 
@@ -15,7 +15,12 @@ const Project = ({
       <h2>{project.subTitle}</h2>
       <div className={styles.container}>
         <div className={styles.imgContainer}>
-          <Image src="/assets/image.png" alt="project" />
+          <Image
+            src="/assets/image.png"
+            width={300}
+            height={300}
+            alt="project"
+          />
         </div>
         <div className={styles.textContainer}>
           <p>{project.description}</p>

@@ -1,11 +1,5 @@
-import { CgProfile } from "react-icons/cg";
-import { TbCalendarStar } from "react-icons/tb";
-import { FaLocationDot } from "react-icons/fa6";
-import { BiSolidPhoneCall } from "react-icons/bi";
-import { HiOutlineMailOpen } from "react-icons/hi";
-import { IoSchoolOutline } from "react-icons/io5";
 import Image from "next/image";
-import * as Type from "../../../types/mainType";
+import * as Type from "../../types/mainType";
 import styles from "./index.module.css";
 
 const About = ({
@@ -27,42 +21,36 @@ const About = ({
         <div className={styles.contentContainer}>
           <ul className={styles.textListContainer}>
             <li className={styles.textItemContainer}>
-              <CgProfile />
               <div className={styles.textContainer}>
                 <div>이름</div>
                 <div>{about?.name}</div>
               </div>
             </li>
             <li className={styles.textItemContainer}>
-              <TbCalendarStar />
               <div className={styles.textContainer}>
                 <div>생년월일</div>
                 <div>{about?.birthdate}</div>
               </div>
             </li>
             <li className={styles.textItemContainer}>
-              <FaLocationDot />
               <div className={styles.textContainer}>
                 <div>주소지</div>
                 <div>{about?.address}</div>
               </div>
             </li>
             <li className={styles.textItemContainer}>
-              <BiSolidPhoneCall />
               <div className={styles.textContainer}>
                 <div>연락처</div>
                 <div>{about?.tel}</div>
               </div>
             </li>
             <li className={styles.textItemContainer}>
-              <HiOutlineMailOpen />
               <div className={styles.textContainer}>
                 <div>이메일</div>
                 <div>{about?.email}</div>
               </div>
             </li>
             <li className={styles.textItemContainer}>
-              <IoSchoolOutline />
               <div className={styles.textContainer}>
                 <div>학력</div>
                 <div>{about?.education}</div>

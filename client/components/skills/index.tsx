@@ -1,5 +1,5 @@
 import Image from "next/image";
-import * as Type from "../../../types/mainType";
+import * as Type from "../../types/mainType";
 import styles from "./skills.module.sass";
 
 const Skills = ({ skills }: { skills: Type.Skills | null }) => {
