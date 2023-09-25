@@ -37,22 +37,26 @@ const About = ({
               <li>
                 <ul>
                   <h2>Education</h2>
-                  <li key="first">
-                    <span>2025.02</span>경희대학교 글로벌커뮤니케이션학부 졸업
+                  <li key="elice">
+                    <span>2023.04 - 2023.11</span> Elice AI 트랙 8기
                   </li>
-                  <li key="second">
-                    <span>2020.02</span>대원여자고등학교 졸업
+                  <li key="univ">
+                    <span>2020.03 - 휴학중</span>경희대학교
+                    글로벌커뮤니케이션학부 입학
+                  </li>
+                  <li key="highschool">
+                    <span>2017.03 - 2020.02</span>대원여자고등학교 졸업
                   </li>
                 </ul>
               </li>
               <li>
                 <ul>
                   <h2>Work</h2>
-                  <li key="first">
-                    <span>2025.02</span>경희대학교 글로벌커뮤니케이션학부 졸업
+                  <li key="company">
+                    <span>2023.01 - 2023.03</span>중소벤처기업진흥공단 사무보조
                   </li>
-                  <li key="second">
-                    <span>2020.02</span>대원여자고등학교 졸업
+                  <li key="subway">
+                    <span>2022.07 - 2023.01</span>Subway Middle Manager
                   </li>
                 </ul>
               </li>
