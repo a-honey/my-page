@@ -20,7 +20,6 @@ export type Props = {
 const Main = ({ importData }: { importData: Props }) => {
   const components = [
     "intro",
-    "index",
     "about",
     "description",
     "skills",
@@ -72,9 +71,6 @@ const Main = ({ importData }: { importData: Props }) => {
   switch (currentComponent) {
     case "intro":
       currentContent = <Intro />;
-      break;
-    case "index":
-      currentContent = <Index />;
       break;
     case "about":
       currentContent = (
