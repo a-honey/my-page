@@ -15,6 +15,7 @@ main {
   align-items: center;
   padding: 5vh;
   color: #fcfdf7;
+  overflow: hidden;
 }
 
 .bright {

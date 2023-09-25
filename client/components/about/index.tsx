@@ -2,6 +2,7 @@ import Image from "next/image";
 import * as Type from "../../types/mainType";
 import styles from "./index.module.scss";
 import Contact from "../common/Contact";
+import Circle from "../common/Circle";
 
 const About = ({
   about,
@@ -14,50 +15,74 @@ const About = ({
     <main className="bright">
       <div className={styles.container}>
         <div className={styles.profile}>
-          <div>사진</div>
-          <div>프론트엔드 개발자 정아현입니다.</div>
-          <div>2001.05.12</div>
+          <Image
+            src="/assets/profile.jpg"
+            alt="front"
+            width={300}
+            height={600}
+          />
+          <h1>Ahyeon, Jung</h1>
+          <ul>
+            <li key="first">사용자의 입장에서 즐거운 경험을 추구합니다</li>
+            <li key="second">서비스의 쓸모를 생각합니다</li>
+            <li key="third">코드가 나아갈 방향을 고민합니다</li>
+          </ul>
           <Contact />
         </div>
-        <div className={styles.secondBlock}>
+        <div className={styles.contentContainer}>
+          <Circle />
           <h1 className="main-name">about me</h1>
-          <div className={styles.contentContainer}>
-            <ul className={styles.textListContainer}>
-              <li className={styles.textItemContainer}>
-                <div className={styles.textContainer}>
-                  <div>이름</div>
-                  <div>{about?.name}</div>
-                </div>
+          <div className={styles.content}>
+            <ul>
+              <li>
+                <ul>
+                  <h2>Education</h2>
+                  <li key="first">
+                    <span>2025.02</span>경희대학교 글로벌커뮤니케이션학부 졸업
+                  </li>
+                  <li key="second">
+                    <span>2020.02</span>대원여자고등학교 졸업
+                  </li>
+                </ul>
               </li>
-              <li className={styles.textItemContainer}>
-                <div className={styles.textContainer}>
-                  <div>생년월일</div>
-                  <div>{about?.birthdate}</div>
-                </div>
+              <li>
+                <ul>
+                  <h2>Work</h2>
+                  <li key="first">
+                    <span>2025.02</span>경희대학교 글로벌커뮤니케이션학부 졸업
+                  </li>
+                  <li key="second">
+                    <span>2020.02</span>대원여자고등학교 졸업
+                  </li>
+                </ul>
               </li>
-              <li className={styles.textItemContainer}>
-                <div className={styles.textContainer}>
-                  <div>주소지</div>
-                  <div>{about?.address}</div>
-                </div>
+              <li>
+                <ul>
+                  <h2>Award</h2>
+                  <li key="first">
+                    <span>2025.02</span>경희대학교 글로벌커뮤니케이션학부 졸업
+                  </li>
+                  <li key="second">
+                    <span>2020.02</span>대원여자고등학교 졸업
+                  </li>
+                </ul>
               </li>
-              <li className={styles.textItemContainer}>
-                <div className={styles.textContainer}>
-                  <div>연락처</div>
-                  <div>{about?.tel}</div>
-                </div>
-              </li>
-              <li className={styles.textItemContainer}>
-                <div className={styles.textContainer}>
-                  <div>이메일</div>
-                  <div>{about?.email}</div>
-                </div>
-              </li>
-              <li className={styles.textItemContainer}>
-                <div className={styles.textContainer}>
-                  <div>학력</div>
-                  <div>{about?.education}</div>
-                </div>
+              <li>
+                <ul>
+                  <h2>Certification</h2>
+                  <li key="first">
+                    <span>2025.02</span>경희대학교 글로벌커뮤니케이션학부 졸업
+                  </li>
+                  <li key="second">
+                    <span>2020.02</span>대원여자고등학교 졸업
+                  </li>
+                  <li key="second">
+                    <span>2020.02</span>대원여자고등학교 졸업
+                  </li>
+                  <li key="second">
+                    <span>2020.02</span>대원여자고등학교 졸업
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
