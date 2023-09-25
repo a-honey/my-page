@@ -47,14 +47,19 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 200px;
-    row-gap: 40px;
+    row-gap: 80px;
     ul {
       display: flex;
       flex-direction: column;
       gap: 20px;
+      min-width: 400px;
       h2 {
         font-size: 25px;
         margin-bottom: 20px;
+      }
+      li > span {
+        display: inline-block;
+        width: 130px;
       }
     }
   }

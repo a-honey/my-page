@@ -1,22 +1,55 @@
-.container {
+.mainContainer {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
 }
 
 .imgContainer {
-  width: 1000px;
-  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   background-color: gray;
 }
 
 .contentContainer {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  gap: 20px;
   h1 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
+  }
+  h2 {
+    font-weight: 700;
+  }
+}
+
+.textContainer {
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+  gap: 40px;
+  .description {
+    display: inline-block;
+    width: 100%;
+  }
+  ul {
+    label {
+      font-size: 20px;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
   }
 }
