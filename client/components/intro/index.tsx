@@ -10,7 +10,7 @@ const Intro = () => {
           <h2>The front-end developer</h2>
         </div>
         <div className={styles.right}>
-          <div>portfolio</div>
+          <div>Welcome to My Protfolio</div>
         </div>
         <Contact />
       </div>
