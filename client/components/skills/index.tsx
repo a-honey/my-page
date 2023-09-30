@@ -4,7 +4,7 @@ import styles from "./skills.module.sass";
 
 const Skills = ({ skills }: { skills: Type.Skills | null }) => {
   return (
-    <main>
+    <section>
       <div className={styles.contentContainer}>
         <div className={`${styles.itemContainer} ${styles.front}`}>
           <Image
@@ -45,7 +45,7 @@ const Skills = ({ skills }: { skills: Type.Skills | null }) => {
           </ul>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

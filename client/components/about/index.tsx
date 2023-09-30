@@ -12,7 +12,7 @@ const About = ({
   intro: Type.Intro | null;
 }) => {
   return (
-    <main className="bright">
+    <section className="bright">
       <div className={styles.container}>
         <div className={styles.profile}>
           <Image
@@ -82,7 +82,7 @@ const About = ({
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

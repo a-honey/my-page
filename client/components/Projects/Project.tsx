@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Project = ({ project }: { project: Type.Project }) => {
   return (
-    <main className="bright">
+    <section className="bright">
       <div className={styles.mainContainer}>
         <Header right={null} />
         <div className={styles.container}>
@@ -53,7 +53,7 @@ const Project = ({ project }: { project: Type.Project }) => {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

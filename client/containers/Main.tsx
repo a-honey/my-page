@@ -18,88 +18,18 @@ export type Props = {
 };
 
 const Main = ({ importData }: { importData: Props }) => {
-  const components = [
-    "intro",
-    "about",
-    "description",
-    "skills",
-    "project",
-    "project1",
-    "project2",
-    "finish",
-  ]; // 컴포넌트 목록 배열
-  const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
-
-  const moveToNextComponent = () => {
-    // 다음 컴포넌트로 이동
-    const nextIndex = (currentComponentIndex + 1) % components.length;
-    setCurrentComponentIndex(nextIndex);
-  };
-
-  const moveToBeforeComponent = () => {
-    // 이전 컴포넌트로 이동
-    const beforeIndex = (currentComponentIndex - 1) % components.length;
-    setCurrentComponentIndex(beforeIndex);
-  };
-
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "ArrowRight") {
-      moveToNextComponent();
-    } else if (e.key === "ArrowLeft") {
-      moveToBeforeComponent();
-    }
-  };
-
-  const handleScroll = (e: Event) => {
-    // 스크롤 이벤트를 감지하여 다음 컴포넌트로 이동
-    moveToNextComponent();
-  };
-
-  useEffect(() => {
-    window.addEventListener("keydown", handleKeyDown);
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [currentComponentIndex]);
-
-  // 현재 컴포넌트 인덱스를 사용하여 현재 표시할 컴포넌트 선택
-  // 현재 컴포넌트 인덱스를 사용하여 현재 표시할 컴포넌트 선택
-  const currentComponent = components[currentComponentIndex];
-
-  // currentComponent에 따라 컴포넌트 렌더링
-  let currentContent;
-  switch (currentComponent) {
-    case "intro":
-      currentContent = <Intro />;
-      break;
-    case "about":
-      currentContent = (
-        <About about={importData.about} intro={importData.intro} />
-      );
-      break;
-    case "description":
-      currentContent = <Description />;
-      break;
-    case "skills":
-      currentContent = <Skills skills={importData.skills} />;
-      break;
-    case "project":
-      currentContent = <Blank content="project" />;
-      break;
-    case "project1":
-      currentContent = <Project project={importData.projects[0]} />;
-      break;
-    case "project2":
-      currentContent = <Project project={importData.projects[1]} />;
-      break;
-    case "finish":
-      currentContent = <Blank content="Thank you" />;
-      break;
-    default:
-      currentContent = null;
-  }
-
-  return <>{currentContent}</>;
+  return (
+    <main>
+      <div>
+        <Intro /> <About about={importData.about} intro={importData.intro} />
+        <Description />
+        <Skills skills={importData.skills} /> <Blank content="project" />
+        <Project project={importData.projects[0]} />
+        <Project project={importData.projects[1]} />
+        <Blank content="Thank you" />
+      </div>
+    </main>
+  );
 };
 
 export default Main;

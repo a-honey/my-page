@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 
 const Blank = ({ content }: { content: string }) => {
   return (
-    <main>
+    <section>
       <div className={styles.container}>
         <div className={styles.center}>
           <h1>{content}</h1>
@@ -13,7 +13,7 @@ const Blank = ({ content }: { content: string }) => {
         </div>
         <Contact />
       </div>
-    </main>
+    </section>
   );
 };
 

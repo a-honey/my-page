@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 
 const Description = () => {
   return (
-    <main className="bright">
+    <section className="bright">
       <div className={styles.container}>
         <Header right={null} />
         <div className={styles.keywords}>
@@ -37,7 +37,7 @@ const Description = () => {
           </ul>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

@@ -8,6 +8,9 @@ body {
 }
 
 main {
+  display: flex;
+}
+section {
   width: 100vw;
   height: 100vh;
   display: flex;

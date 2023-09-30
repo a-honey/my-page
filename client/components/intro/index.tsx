@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 
 const Intro = () => {
   return (
-    <main>
+    <section>
       <div className={styles.container}>
         <div className={styles.center}>
           <h1>Ahyeon, Jung</h1>
@@ -14,7 +14,7 @@ const Intro = () => {
         </div>
         <Contact />
       </div>
-    </main>
+    </section>
   );
 };
 
