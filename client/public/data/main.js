@@ -86,28 +86,39 @@ export const data = {
   },
   projects: [
     {
-      title: "국립중앙박물관 클론코딩",
-      subTitle: "국립중앙박물관 페이지를 리액트로 제작하였습니다.",
-      imgUrl: "project1.jpg",
+      title: "SEOUL PLOG FIESTA ",
+      subTitle:
+        "플로깅을 장려하기 위해 제작한 환경 보호 및 건강한 도시 조성 권장 프로젝트",
+      imgUrl: "seoulplogfiesta.jpg",
       description:
-        "React를 학습한 이후 실제로 적용하기 위해 국립중앙박물관 페이지를 똑같이 구현하였습니다. padding, margin, flex 등 기본적인 CSS를 학습할 수 있었고 useState 등 리액트의 기본 원리를 이해할 수 있었습니다. 또한 공공데이터포털에서 국립현대미술관API를 fetching하여 전시 컴포넌트를 구현하였습니다.",
+        "안정적인 라이브러리 사용의 중요성을 깨닫고, 리액트로 제작한 웹 사이트입니다. 빠른 상호작용이 가능한 리액트의 장점을 살려 앱처럼 개발했습니다. 앱처럼 화면을 꽉채우기 위해 vh를 사용하여 개발하였다가, 맥, 윈도우, 모니터 등 환경마다의 반응이 달라 문제점이 있어 한계점을 익힐 수 있었고 min-width를 통해 임시방편을 사용하였습니다. Context API, Redux, Recoil 등을 활용하여 상태관리 라이브러리마다의 차이점을 익히고자 하였으나, 웹서비스 규모의 특성상 특별한 장단점을 익히기는 어려웠습니다. 특히 하나의 상태에 관련하여 하나의 라이브러리를 사용하는 것으로 잘못 생각하면서 localStorage, sessionStorage, search, ContextAPI,  Recoil, Redux-Toolkit을 전부 사용하게 되었고 이에 따른 혼란을 직접 겪으며 하나의 상태관리를 하는 이유를 깨달을 수 있었습니다. 추후 Redux-Toolkit으로 리팩토링을 하며 하나의 라이브러리 사용의 편리함을 익힐 수 있었습니다. 프로젝트 종료 이후 타입스크립트로 마이그레이션하였으며, 그 과정에서 ts, tsx 확장자 외의 모듈을 불러오기 위한 타입스크립트 선언 및 웹팩을 익혔습니다. 또한 WebSocket을 이용하여 받은 채팅 확인 및 새로운 채팅 알림 토스트메시지 등 실시간 채팅기능을 추가하였습니다.",
       features: "Feature 1, Feature 2",
-      featuresDescription: "setTimeout을 활용한 슬라이드 구현",
-      projectRepository: "https://github.com/example/project1",
-      role: "Frontend Developer",
-      stack: "React",
+      featuresDescription: [
+        "플로깅 참여 개인 및 그룹 인증",
+        "친구 요청 및 수락 기능, 그룹 가입요청 및 수락 기능",
+        "geojson과 D3.js를 이용하여 인증 게시글에 따른 비트맵 지도 구현",
+        "WebSocket을 활용한 실시간 채팅 및 알림",
+      ],
+      projectRepository: "https://github.com/a-honey/seoul-plog-fiesta",
+      role: "Team Leader, Frontend Developer",
+      stack: ["React", "Sass", "D3.js", "Redux Toolkit", "Axios", "Socket.io"],
     },
     {
-      title: "프로젝트2222 제목입니다",
-      subTitle: "프로젝트 2222소제목입니다. 간단한 한줄 설명입니다.",
-      imgUrl: "project1.jpg",
+      title: "TAKE YOUR TICKET",
+      subTitle:
+        "영화, 책, 극 등의 사진, 리뷰, 키워드를 입력하여 개인 맞춤형 티켓을 제작하는 프로젝트",
+      imgUrl: "takeyourticket.jpg",
       description:
-        "프로젝트22 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게~ 프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게프로젝트 설명 길게~",
+        "React와 Next의 차이점에 대해 알아본 후, 다른 웹 프레임워크의 장단점을 이해하고자 Vue로 제작한 웹 사이트입니다. 백없이 html에 전달할 방법에 대해 고민하다가, 다른 사람들과 쉽게 공유할 수 있는 url을 통한 데이터 보관 방법을 선택했습니다.",
       features: "Feature 1, Feature 2",
-      featuresDescription: "This project includes...",
-      projectRepository: "https://github.com/example/project1",
+      featuresDescription: [
+        "사진 미리보기",
+        "맞춤형 티켓 제작",
+        "색상, 폰트크기 등 UI 사용자 수정 기능",
+      ],
+      projectRepository: "https://github.com/example/take-your-ticket",
       role: "Frontend Developer",
-      stack: "React, Node.js, MongoDB",
+      stack: ["Vue.js", "file-saver", "html2canvas"],
     },
   ],
 };

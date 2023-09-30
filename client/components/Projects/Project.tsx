@@ -11,7 +11,7 @@ const Project = ({ project }: { project: Type.Project }) => {
         <div className={styles.container}>
           <div className={styles.imgContainer}>
             <Image
-              src="/assets/image.png"
+              src={`/assets/${project.imgUrl}`}
               width={800}
               height={600}
               alt="project"
@@ -26,7 +26,9 @@ const Project = ({ project }: { project: Type.Project }) => {
                 <ul>
                   <li>
                     <label>주요 기능</label>
-                    <div>{project.featuresDescription}</div>
+                    {project.featuresDescription.map((feat) => (
+                      <div key={feat}>{feat}</div>
+                    ))}
                   </li>
                   <li>
                     <label>역할</label>
@@ -34,10 +36,16 @@ const Project = ({ project }: { project: Type.Project }) => {
                   </li>
                   <li>
                     <label>스택</label>
-                    <div>{project.stack}</div>
+                    <div className="stack">
+                      {project.stack.map((el) => (
+                        <span key={el}>{" " + el}</span>
+                      ))}
+                    </div>
                   </li>
                   <li>
-                    <a href={project.projectRepository}>프로젝트 둘러보기</a>
+                    <a href={project.projectRepository} target="_blank">
+                      프로젝트 둘러보기
+                    </a>
                   </li>
                 </ul>
               </div>

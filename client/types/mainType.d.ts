@@ -42,10 +42,10 @@ type Project = {
   imgUrl: string;
   description: string;
   features: string;
-  featuresDescription: string;
+  featuresDescription: string[];
   projectRepository: string;
   role: string;
-  stack: string;
+  stack: string[];
 };
 
 type Projects = Project[];
