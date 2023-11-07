@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 
 const Blank = ({ content }: { content: string }) => {
   return (
-    <section>
+    <section className="main-container">
       <div className={styles.container}>
         <div className={styles.center}>
           <h1>{content}</h1>

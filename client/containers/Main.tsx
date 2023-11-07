@@ -1,11 +1,7 @@
 import About from "../components/about";
 import Skills from "../components/skills";
-import { data } from "../public/data/main";
 import * as Type from "../types/mainType";
-import { useEffect, useState } from "react";
-import Contact from "../components/contact/Contact";
 import Intro from "@/components/intro";
-import Index from "@/components/Index";
 import Description from "@/components/description";
 import Blank from "@/components/common/Blank";
 import Project from "@/components/Projects/Project";

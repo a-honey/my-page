@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 
 const Description = () => {
   return (
-    <section className="bright">
+    <section className="bright main-container">
       <div className={styles.container}>
         <Header right={null} />
         <div className={styles.keywords}>

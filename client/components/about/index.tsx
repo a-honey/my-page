@@ -12,7 +12,7 @@ const About = ({
   intro: Type.Intro | null;
 }) => {
   return (
-    <section className="bright">
+    <section className="bright main-container">
       <div className={styles.container}>
         <div className={styles.profile}>
           <Image

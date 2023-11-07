@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Project = ({ project }: { project: Type.Project }) => {
   return (
-    <section className="bright">
+    <section className="bright main-container">
       <div className={styles.mainContainer}>
         <Header right={null} />
         <div className={styles.container}>
