@@ -8,11 +8,11 @@
 
 
 ## **기술 스택 및 도구**
-![Nest.js](https://img.shields.io/badge/-Nest.js-E0234E?style=for-the-badge&logo=nestjs&logoColor=ffffff)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=next.js&logoColor=ffffff)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=ffffff)
 ![Module CSS](https://img.shields.io/badge/-Module_CSS-1572B6?style=for-the-badge&logo=css3&logoColor=ffffff)
 
-- **Nest.js**: SSG 렌더링을 위해 사용했습니다.
+- **Next.js**: SSG 렌더링을 위해 사용했습니다.
 - **TypeScript**: 프로젝트의 안정성을 향상시키고 개발자 생산성을 높이기 위해 사용했습니다.
 
 ## 프로젝트 설치 및 실행 방법
